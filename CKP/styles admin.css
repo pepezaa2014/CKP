@@ -1,0 +1,142 @@
+body,
+html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.pic1 {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+
+    background-image: url("support.png");
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 500px;
+    padding: 50px;
+    box-sizing: border-box;
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 10px;
+    background: rgba(0,0,0,.8);
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+}
+
+.box3 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 150px;
+    padding: 20px;
+    box-sizing: border-box;
+
+    transform: translate(-50%, -50%);
+
+    border-color: black;
+    border-radius: 10px;
+    background: linear-gradient(45deg,#cd8c95,#e066ff);
+}
+
+.box .inputBox {
+    position: relative;
+}
+
+
+.box .inputBox input {
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 30px;
+
+    font-size: 16px;
+
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.box .inputBox label {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    padding: 10px 0;
+
+    font-size: 16px;
+
+    transition: .5s;
+    pointer-events: none;
+
+    color: #fff;
+}
+
+.box .inputBox input:focus ~ label,
+.box .inputBox input:valid ~ label {
+    top: -20px;
+    left: 0;
+
+    font-size: 12px;
+
+    color: #03a9f4;
+}
+
+.box input[type="submit"] {
+    padding: 10px 20px;
+
+    cursor: pointer;
+
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: transparent;
+    background: #03a9f4;
+}
+.topnav {
+    position: fixed;
+    top: 0;
+
+    width: 100%;
+    overflow: hidden;
+
+    background-color: #009acd;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+    display: block;
+    float: left;
+    padding: 14px 16px;
+
+    font-size: 17px;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: #fffafa;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    color: black;
+    background-color: #ddd;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+    color: white;
+    background-color: #00688b;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}

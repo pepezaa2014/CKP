@@ -1,0 +1,99 @@
+body,
+html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.topnav {
+    position: fixed;
+    top: 0;
+
+    width: 100%;
+    overflow: hidden;
+
+    background-color: #009acd;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+    display: block;
+    float: left;
+    padding: 14px 16px;
+
+    font-size: 17px;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: #fffafa;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    color: black;
+    background-color: #ddd;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+    color: white;
+    background-color: #00688b;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+    color: white;
+    background-color: #555;
+}
+
+.parallax {
+    /* Full height */
+    height: 100%;
+    margin-left: 0;
+    /* The image used */
+
+    background-image: url("para1.jpg");
+    background-repeat: no-repeat;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 700px;
+    padding: 70px;
+    box-sizing: border-box;
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 10px;
+    background: rgba(0,0,0,.8);
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+}
+
+.box3 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 300px;
+    padding: 25px;
+    box-sizing: border-box;
+
+    transform: translate(-50%, -50%);
+
+    border-color: black;
+    border-radius: 10px;
+    background: linear-gradient(45deg,#8b008b,#00b2ee);
+}

@@ -1,0 +1,297 @@
+body,
+html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.borderpara {
+    position: absolute;
+
+    margin-top: 20%;
+    margin-left: 40%;
+
+    border-width: 20px;
+    border-style: solid;
+    border-color: #696969;
+}
+
+.borderpara1 {
+    position: absolute;
+
+    margin-top: 20%;
+    margin-left: 38%;
+
+    border-width: 20px;
+    border-style: solid;
+    border-color: #696969;
+}
+
+
+.box {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+
+    width: 500px;
+    padding: 100px;
+    box-sizing: border-box;
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 10px;
+    background: rgba(0,0,0,.8);
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+}
+
+.box h2 {
+    padding: 0;
+    margin: 0 0 30px;
+
+    text-align: center;
+
+    color: #fff;
+    color: #00ff7f;
+}
+
+.box .inputBox {
+    position: relative;
+}
+
+
+.box .inputBox input {
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 30px;
+
+    font-size: 16px;
+
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.box .inputBox label {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    padding: 10px 0;
+
+    font-size: 16px;
+
+    transition: .5s;
+    pointer-events: none;
+
+    color: #fff;
+}
+
+.box .inputBox input:focus ~ label,
+.box .inputBox input:valid ~ label {
+    top: -20px;
+    left: 0;
+
+    font-size: 12px;
+
+    color: #03a9f4;
+}
+
+.box input[type="submit"] {
+    padding: 10px 20px;
+
+    cursor: pointer;
+
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: transparent;
+    background: #03a9f4;
+}
+
+.round {
+    border: 30px solid red;
+    border-radius: 10px;
+}
+
+.main {
+    height: 1500px; /* Used in this example to enable scrolling */
+    padding: 16px;
+    margin-top: 30px;
+}
+
+.parallax {
+    /* Full height */
+    height: 100%;
+    margin-left: 0;
+    /* The image used */
+
+    background-image: url("para1.jpg");
+    background-repeat: no-repeat;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.parallax2 {
+    /* Full height */
+    height: 100%;
+
+    background-image: url("para2.jpg");
+    background-repeat: no-repeat;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    position: fixed;
+    top: 0;
+
+    width: 100%;
+    overflow: hidden;
+
+    background-color: #009acd;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+    display: block;
+    float: left;
+    padding: 14px 16px;
+
+    font-size: 17px;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: #fffafa;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    color: black;
+    background-color: #ddd;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+    color: white;
+    background-color: #00688b;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+    padding: 14px 16px;
+    margin: 0;
+
+    font-family: inherit;
+    font-size: 17px;
+
+    color: white;
+    border: none;
+    outline: none;
+    background-color: inherit;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    position: absolute;
+    z-index: 1;
+
+    display: none;
+    min-width: 160px;
+
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,.2);
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+    position: fixed;
+
+    display: block;
+    float: none;
+    padding: 12px 16px;
+
+    text-align: left;
+    text-decoration: none;
+
+    color: black;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+    color: white;
+    background-color: #555;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+    color: black;
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child),
+    .dropdown .dropbtn {
+        display: none;
+    }
+    .topnav a.icon {
+        display: block;
+        float: right;
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive a.icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .topnav.responsive a {
+        display: block;
+        float: none;
+
+        text-align: left;
+    }
+    .topnav.responsive .dropdown {
+        float: none;
+    }
+    .topnav.responsive .dropdown-content {
+        position: relative;
+    }
+    .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+
+        text-align: left;
+    }
+}
